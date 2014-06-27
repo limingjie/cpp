@@ -20,7 +20,7 @@
   {
       using namespace std;
 
-      cout << "Hello World!\nPrint any key to continue..." << endl;
+      cout << "Hello World!\nPrint Enter to continue..." << endl;
       cin.ignore();
 
       return 0;
