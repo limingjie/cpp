@@ -10,22 +10,24 @@
 ##lab01: Say Hello
 - Single source file
   - `hello.cpp`
-```c++
-  #include <iostream>
 
-  // Never using namespace globally
-  // using namespace std;
+        ```c++
+        #include <iostream>
 
-  int main()
-  {
-      using namespace std;
+        // Never using namespace globally
+        // using namespace std;
 
-      cout << "Hello World!\nPrint Enter to continue..." << endl;
-      cin.ignore();
+        int main()
+        {
+            using namespace std;
 
-      return 0;
-  }
-```
+            cout << "Hello World!\nPrint Enter to continue..." << endl;
+            cin.ignore();
+
+            return 0;
+        }
+        ```
+
 - Compile & Link
   - `$ g++ -o hello.exe hello.cpp`
 - Run
@@ -39,12 +41,14 @@
   - `board.cpp`
   - `unblock.cpp`
 - Compile & Link
-```
-$ g++ -c -o unblock.o unblock.cpp
-$ g++ -c -o block.o block.cpp
-$ g++ -c -o board.o board.cpp
-$ g++ -o unblock.exe unblock.o block.o board.o
-```
+
+    ```
+    $ g++ -c -o unblock.o unblock.cpp
+    $ g++ -c -o block.o block.cpp
+    $ g++ -c -o board.o board.cpp
+    $ g++ -o unblock.exe unblock.o block.o board.o
+    ```
+
 - Run
   - `$ unblock.exe`
 
@@ -59,14 +63,14 @@ $ g++ -o unblock.exe unblock.o block.o board.o
   - Object definitions `int debug_enabled = 1;`
 
 ##Include Guard
+
 ```c++
-  #ifndef __BOARD_H__
-  #define __BOARD_H__
+#ifndef __BOARD_H__
+#define __BOARD_H__
 
-  #include "block.h"
+#include "block.h"
 
-  #endif // __BOARD_H__
-
+#endif // __BOARD_H__
 ```
 
 ##Compiler & Linker
@@ -94,17 +98,20 @@ $ g++ -o unblock.exe unblock.o block.o board.o
   - `$ make`
   - `$ make -f filename`
 - Basic Makefile
-```
-target: dependencies
-[tab] command 1
-...
-[tab] command n
-```
+
+    ```
+    target: dependencies
+    [tab] command 1
+    ...
+    [tab] command n
+    ```
+
 - `%.o: %.cpp`
 - Micros
-```
-MACRO = definition
-```
+
+    ```
+    MACRO = definition
+    ```
 
 ##More Options of g++
 - Warning

@@ -355,3 +355,12 @@ int main()
 
 - Infinite loop
 - switch-case fall through
+
+### lab: Write a program to print all command line arguments
+
+```
+$ argument.exe hello world
+arg[0] = ?
+...
+arg[n] = ?
+```
