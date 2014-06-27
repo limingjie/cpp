@@ -51,6 +51,7 @@ std::cout << "i = " << i << std::endl;
     - `int SingingInTheRain;`
     - `int SingIngInTheRain;`
   - Only allow alphabetic characters, digits and underscore
+  - Leading digit is not allowed
   - Keywords is not allowed
 
 ## Data Types
@@ -107,6 +108,9 @@ unsigned int u = -16;
 ## Constants
 ### Numerals
 - Suffixes
+  - `10ull  // unsigned long long`
+  - `10.0f  // float`
+  - `10.0l  // long double`
 
 |Suffix     |Type modifier   |
 |:----------|:---------------|
@@ -115,10 +119,6 @@ unsigned int u = -16;
 |ll or LL   |long long       |
 |f or F     |float           |
 |l or L     |long double     |
-
-  - `10ull  // unsigned long long`
-  - `10.0f  // float`
-  - `10.0l  // long double`
 
 - Decimal / Octal / Hexadecimal
   - `32     // Decimal`
@@ -150,8 +150,12 @@ unsigned int u = -16;
 - Multi-line string literals
 ```c++
   string str = "This is a very very long sentence, "
-               "which is not long enough."
+               "which is not long enough.";
 ```
+- Null-terminated string
+  - An extra char for '\0'
+
+### lab02: constant.cpp
 
 ### Constants Common Mistakes
 - Modify C String Constants
@@ -160,11 +164,36 @@ unsigned int u = -16;
   str[6] = 'g';
 ```
 - Forgot Escape code
-  - `string path = "c:\Windows\System32";   // Wrong!`
-  - `string path = "c:\\Windows\\System32"; // Correct!`
+```c++
+  string path = "c:\Windows\System32";   // Wrong!
+  string path = "c:\\Windows\\System32"; // Correct!
+```
+- Forgot terminate char
+```c++
+  char a[4] = "Good";  // Not enough space
+  char b[5] = "Good";
+  b[4] = 'x';
+```
 
 ## Variables
-- TODO
+- Concept
+  - Named storage in memory
+  - Specific type
+- lvalue and rvalue
+  - lvalue - may appear on either side of an assignment
+    - `double price = 0;`
+    - `price = price * 0.9;`
+  - rvalue - may appear on right but not left-hand side of an assignment
+    - `0 = 1;`
+- Initialize
+  - `int value(10); // direct initialization`
+  - `int value = 10; // copy initialization`
+- Scope
+  - global scope
+  - local scope
+  - statement scope
+
+### lab02: scope.exe
 
 ## Operators
 ### Arithmetic operators
@@ -233,7 +262,10 @@ unsigned int u = -16;
   - `100 / 3`
   - `100 / 3.0`
 - Side effect of increment/decrement
-  - Return first, increment/decrement first?
+  - A deeper look at x++
+    - `y = x;`
+    - `x = x + 1;`
+    - `return y;`
   - Undefined behavior
     - `x = y++ + y++ + y++;`
     - `x = ++y + ++y + ++y;`
