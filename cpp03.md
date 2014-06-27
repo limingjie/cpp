@@ -1,8 +1,11 @@
 #Memory Layout
 ##array and pointer
 ##Stack and Heap
-##Useful Libraries
-###string
+##string
+##iostream
+##Generic Programming
 ###vector
-###iostream
-###fstream
+###list
+###map
+###set
+###deque
