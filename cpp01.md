@@ -44,14 +44,15 @@
  - Link to library
    - `-l` `-lstatic`
 
-##Compile & Link
-  - lab01: Complex Case
+##lab01: Complex Case
 ```
 $ g++ -c -o unblock.o unblock.cpp
 $ g++ -c -o block.o block.cpp
 $ g++ -c -o board.o board.cpp
 $ g++ -o unblock.exe unblock.o block.o board.o
 ```
+
+##Compile & Link
  - Compile
  - Link
 
