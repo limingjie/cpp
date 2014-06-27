@@ -88,12 +88,12 @@ std::cout << "i = " << i << std::endl;
 
 ### Type Common Mistakes
 - Infinite loop
-```c++
-for (size_t i = 100; i >= 0; --i)
-```
-- Overflow
-  - Assigned value out of range
-```c++
+ ```c++
+ for (size_t i = 100; i >= 0; --i)
+ ```
+ - Overflow
+   - Assigned value out of range
+ ```c++
 char         a = 1024;
 int          i = UINT_MAX;
 unsigned int u = -16;
