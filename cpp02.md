@@ -123,6 +123,7 @@ std::cout << "i = " << i << std::endl;
 ```
 
 ### Variables
+- TODO
 
 ### Lab02: type.cpp
 
