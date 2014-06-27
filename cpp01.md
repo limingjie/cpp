@@ -7,8 +7,8 @@
  - Dependency Walker (http://www.dependencywalker.com/)
  - UPX (http://upx.sourceforge.net/)
 
-##Say Hello
- - lab/hello.cpp
+##lab01: Say Hello
+ - hello.cpp
 ```c++
  #include <iostream>
 
@@ -28,25 +28,32 @@
  - Compile & Link
    - `$ g++ -o hello.exe hello.cpp`
 
-##More options of g++
- - Optimization
-   - `-O1` `-O2` `-O3` `-Os`
+##More Options of g++
  - Warning
    - `-Wall`
- - C++11
-   - `-std=c++11`
  - Assembly
    - `-s`
+ - Optimization
+   - `-O1` `-O2` `-O3` `-Os`
+ - C++11
+   - `-std=c++11`
+ - Include Additional Path for head files
+   - `-I` `-Ipath`
+ - Include Additional Path for library
+   - `-L` `-Lpath`
+ - Link to library
+   - `-l` `-lstatic`
 
 ##Compile & Link
- - Compile
- - Link
+  - lab01: Complex Case
 ```
 $ g++ -c -o unblock.o unblock.cpp
 $ g++ -c -o block.o block.cpp
 $ g++ -c -o board.o board.cpp
 $ g++ -o unblock.exe unblock.o block.o board.o
 ```
+ - Compile
+ - Link
 
 ##Further Optimize Executable Size
  - Optimization flags
@@ -56,5 +63,20 @@ $ g++ -o unblock.exe unblock.o block.o board.o
  - UPX
    - `$ UPX -9 hello.exe`
 
-##Header file
- - Micro
+##Include Guard
+```c++
+#ifndef __BOARD_H__
+#define __BOARD_H__
+
+#include "block.h"
+
+#endif // __BOARD_H__
+
+```
+
+##Deliver
+- Debug build / Release build
+- Dependencies
+  - OS
+  - Dynamic Libraries
+
