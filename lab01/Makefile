@@ -13,13 +13,15 @@ CXXFLAGS  = -Wall -O3 -std=c++11
 EXES      = hello.exe unblock.exe
 
 # Targets
-all: $(EXES)
+all: hello unblock
 
 hello: hello.exe
-	@echo "hello build successfully."
+	@echo "==>Build successfully -" $<
+	@echo
 
 unblock: unblock.exe
-	@echo "unblock build successfully."
+	@echo "==>Build successfully -" $<
+	@echo
 
 %.o: %.cpp
 	@echo "==>Compiling" $<
