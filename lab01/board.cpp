@@ -12,6 +12,14 @@
 
 #include "board.h"
 
+Board::Board(size_t width, size_t height)
+{
+    this->width = width;
+    this->height = height;
+
+    data = new BoardData(width * height, 0);
+}
+
 Board::~Board()
 {
     delete data;

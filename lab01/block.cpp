@@ -86,11 +86,3 @@ void Block::Print(size_t board_width, size_t board_height, size_t block_x, size_
     b.SetBlock(this, block_x, block_y);
     b.Print(title);
 }
-
-Board::Board(size_t width, size_t height)
-{
-    this->width = width;
-    this->height = height;
-
-    data = new BoardData(width * height, 0);
-}

@@ -1,6 +1,59 @@
 # Basics
 
-## Types
+## Basic Program Structure
+```c++
+  #include <iostream>
+
+  // Never using namespace globally
+  // using namespace std;
+
+  int main()
+  {
+      using namespace std;
+
+      cout << "Hello World!\nPrint Enter to continue..." << endl;
+      cin.ignore();
+
+      return 0;
+  }
+```
+
+### Header File & Namespace
+- What is namespace?
+- Do not using namespace globally
+
+### Entry Point & Return Value
+- Standard `int main(int argc, char **argv)`
+- Check return value `$ echo $?`
+
+### Statements
+- Statement
+```c++
+int i = 0;
+std::cout << "i = " << i << std::endl;
+```
+- Compound statement
+```c++
+{
+    std::string s = "foo bar!";
+    std::cout << s << std::endl;
+}
+```
+
+## Tokens
+### Keywords
+- http://en.cppreference.com/w/cpp/keyword
+
+### Identifier
+- Names of functions, variables and classes
+- Naming rule
+  - Case Sensitive
+    - `int SingingInTheRain;`
+    - `int SingIngInTheRain;`
+  - Only allow alphabetic characters, digits and underscore
+  - Keywords is not allowed
+
+## Data Types
 ### Primitive Built-in Types
 - Integer types (signed / unsigned)
 
@@ -29,6 +82,38 @@
   - bool
 - Void type
   - void
+
+### Constants
+- Numerals
+ |Suffix     |Type modifier   |
+ |:----------|:---------------|
+ |u or U     |unsigned        |
+ |l or L     |long            |
+ |ll or LL   |long long       |
+ |f or F     |float           |
+ |l or L     |long double     |
+- Character and string literals
+  - Escape Code
+ | Escape code | Description           |
+ |:------------|:----------------------|
+ | \n          | newline               |
+ | \r          | carriage return       |
+ | \t          | tab                   |
+ | \v          | vertical tab          |
+ | \b          | backspace             |
+ | \f          | form feed (page feed) |
+ | \a          | alert (beep)          |
+ | \'          | single quote (')      |
+ | \"          | double quote (")      |
+ | \?          | question mark (?)     |
+ | \\          | backslash (\)         |
+  - Character
+    - `'a'` `'A'` `'1'` `'\t'`
+  - String literals
+    - `"Hello World!"`
+    - `"Hello World!\n"`
+
+### Variables
 
 ### Lab02: type.cpp
 
@@ -119,20 +204,6 @@ unsigned int u = -16;
     - `x = y++ + y++ + y++;`
     - `x = ++y + ++y + ++y;`
 - Logical or Bitwise
-
-## Statements
-- Statement
-```c++
-int i = 0;
-std::cout << "i = " << i << std::endl;
-```
-- Compound statement
-```c++
-{
-    std::string s = "foo bar!";
-    std::cout << s << std::endl;
-}
-```
 
 ## Flow Control
 ### Statements
