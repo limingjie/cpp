@@ -28,17 +28,17 @@
 
 ### Statement
 - Statements
-```c++
-int i = 0;
-std::cout << "i = " << i << std::endl;
-```
+    ```c++
+    int i = 0;
+    std::cout << "i = " << i << std::endl;
+    ```
 - Compound statement / Block
-```c++
-{
-    std::string s = "foo bar!";
-    std::cout << s << std::endl;
-}
-```
+    ```c++
+    {
+        std::string s = "foo bar!";
+        std::cout << s << std::endl;
+    }
+    ```
 
 ## Tokens
 ### Keywords
@@ -88,16 +88,16 @@ std::cout << "i = " << i << std::endl;
 
 ### Type Common Mistakes
 - Infinite loop
- ```c++
- for (size_t i = 100; i >= 0; --i)
- ```
- - Overflow
-   - Assigned value out of range
- ```c++
-char         a = 1024;
-int          i = UINT_MAX;
-unsigned int u = -16;
-```
+    ```c++
+    for (size_t i = 100; i >= 0; --i)
+    ```
+- Overflow
+  - Assigned value out of range
+        ```c++
+        char         a = 1024;
+        int          i = UINT_MAX;
+        unsigned int u = -16;
+        ```
   - Caution on Calculation
     - `a * b / c` or `a / c * b`
     - `a + b - c` or `a - c + b`
@@ -148,10 +148,10 @@ unsigned int u = -16;
   - `"Hello World!"`
   - `"Hello\tWorld!\n"`
 - Multi-line string literals
-```c++
-  string str = "This is a very very long sentence, "
-               "which is not long enough.";
-```
+    ```c++
+      string str = "This is a very very long sentence, "
+                   "which is not long enough.";
+    ```
 - Null-terminated string
   - An extra char for '\0'
 
@@ -159,21 +159,21 @@ unsigned int u = -16;
 
 ### Constants Common Mistakes
 - Modify C String Constants
-```c++
-  char *str = "Singin' in the Rain";
-  str[6] = 'g';
-```
+    ```c++
+      char *str = "Singin' in the Rain";
+      str[6] = 'g';
+    ```
 - Forgot Escape code
-```c++
-  string path = "c:\Windows\System32";   // Wrong!
-  string path = "c:\\Windows\\System32"; // Correct!
-```
+    ```c++
+      string path = "c:\Windows\System32";   // Wrong!
+      string path = "c:\\Windows\\System32"; // Correct!
+    ```
 - Forgot terminate char
-```c++
-  char a[4] = "Good";  // Not enough space
-  char b[5] = "Good";
-  b[4] = 'x';
-```
+    ```c++
+      char a[4] = "Good";  // Not enough space
+      char b[5] = "Good";
+      b[4] = 'x';
+    ```
 
 ## Variables
 - Concept
@@ -287,25 +287,24 @@ unsigned int u = -16;
 
 ### Flow Control Common Mistakes
 - Statement not statements
-```c++
-// statement 2 is not in if statement
-if (condition)
-    statement 1;
-    statement 2; // always be executed
-// put statements in a block
-if (condition)
-{
-    statement 1;
-    statement 2;
-}
-```
+    ```c++
+    // statement 2 is not in if statement
+    if (condition)
+        statement 1;
+        statement 2; // always be executed
+    // put statements in a block
+    if (condition)
+    {
+        statement 1;
+        statement 2;
+    }
+    ```
 - Extra semicolon
-```c++
-for (i = 0; i < 100; i++);
-{
-    std::cout << i << std::endl;
-}
-```
+    ```c++
+    for (i = 0; i < 100; i++);
+    {
+        std::cout << i << std::endl;
+    }
+    ```
 - Infinite loop
 - switch-case fall through
-
