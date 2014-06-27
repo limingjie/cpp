@@ -3,22 +3,22 @@
 ## Basic Program Structure
 ### hello.cpp
 
-    ```c++
-    #include <iostream>
+```c++
+#include <iostream>
 
-    // Never using namespace globally
-    // using namespace std;
+// Never using namespace globally
+// using namespace std;
 
-    int main()
-    {
-        using namespace std;
+int main()
+{
+    using namespace std;
 
-        cout << "Hello World!\nPrint Enter to continue..." << endl;
-        cin.ignore();
+    cout << "Hello World!\nPrint Enter to continue..." << endl;
+    cin.ignore();
 
-        return 0;
-    }
-    ```
+    return 0;
+}
+```
 
 ### Header File & Namespace
 - What is namespace?
@@ -54,8 +54,8 @@
   - Case Sensitive
 
         ```c++
-        `int SingingInTheRain;`
-        `int SingIngInTheRain;`
+        int SingingInTheRain;
+        int SingIngInTheRain;
         ```
 
   - Only allow alphabetic characters, digits and underscore
@@ -165,8 +165,8 @@
 - String literals
 
     ```c++
-    "Hello World!"
-    "Hello\tWorld!\n"
+    char *foo = "Hello World!"
+    char *bar = "Hello\tWorld!\n"
     ```
 - Multi-line string literals
 
@@ -181,21 +181,21 @@
 ### lab02: constant.cpp
 
 ### Constants Common Mistakes
-- Modify C String Constants
+- Modify C string constants
 
     ```c++
       char *str = "Singin' in the Rain";
       str[6] = 'g';
     ```
 
-- Forgot Escape code
+- Forget escape code
 
     ```c++
       string path = "c:\Windows\System32";   // Wrong!
       string path = "c:\\Windows\\System32"; // Correct!
     ```
 
-- Forgot terminate char
+- Forget terminate char
 
     ```c++
       char a[4] = "Good";  // Not enough space
