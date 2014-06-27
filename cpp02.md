@@ -68,11 +68,11 @@ std::cout << "i = " << i << std::endl;
 
 - Floating-point types (IEEE 754)
 
-|Type        |Range                        |Precision           |Size        |
-|:-----------|:----------------------------|:-------------------|:-----------|
-|float       |±1.18×10<sup>38</sup> to ±3.4×10<sup>38</sup>    |~ 7 decimal digits  |32 bits     |
-|double      |±2.23×10<sup>308</sup> to ±1.80×10<sup>308</sup> |~ 15 decimal digits |64 bits     |
-|long double | -                           |-                   |80-128 bits |
+ | Type         | Range                                            | Precision            | Size         |
+ | :----------- | :----------------------------                    | :------------------- | :----------- |
+ | float        | ±1.18×10<sup>38</sup> to ±3.4×10<sup>38</sup>    | ~ 7 decimal digits   | 32 bits      |
+ | double       | ±2.23×10<sup>308</sup> to ±1.80×10<sup>308</sup> | ~ 15 decimal digits  | 64 bits      |
+ | long double  | -                                                | -                    | 80-128 bits  |
 
 - Character types
   - char
