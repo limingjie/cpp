@@ -44,6 +44,27 @@ $ g++ -c -o board.o board.cpp
 $ g++ -o unblock.exe unblock.o block.o board.o
 ```
 
+##Source File Conventions
+- Header files `.h` `.hpp` `.hxx` `...`
+  - Class definitions `class X { ... };`
+  - Inline function definitions `inline int get_cpus() { ... }`
+  - Function declarations `void help();`
+  - Object declarations `extern int debug_enabled;`
+- Source files `.cpp` `.cxx` `...`
+  - Function definitions `void help() { ... }` `void X::f() { ... }`
+  - Object definitions `int debug_enabled = 1;`
+
+##Include Guard
+```c++
+#ifndef __BOARD_H__
+#define __BOARD_H__
+
+#include "block.h"
+
+#endif // __BOARD_H__
+
+```
+
 ##Compile & Link
 - Compile
 - Link
@@ -82,17 +103,6 @@ target: dependencies
 - UPX
   - `$ UPX -9 hello.exe`
   - `$ UPX --ultra-brute hello.exe`
-
-##Include Guard
-```c++
-#ifndef __BOARD_H__
-#define __BOARD_H__
-
-#include "block.h"
-
-#endif // __BOARD_H__
-
-```
 
 ##Deliver
 - Debug build / Release build
