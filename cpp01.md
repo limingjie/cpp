@@ -8,7 +8,7 @@
 - UPX (http://upx.sourceforge.net/)
 
 ##lab01: Say Hello
-1. Single source file `hello.cpp`
+- Single source file `hello.cpp`
 
     ```c++
     #include <iostream>
@@ -27,19 +27,19 @@
     }
     ```
 
-2. Compile & Link
+- Compile & Link
   - `$ g++ -o hello.exe hello.cpp`
-3. Run
+- Run
   - `$ hello.exe`
 
 ##lab01: Complex Case
-1. Multiple source files
+- Multiple source files
   - `block.h`
   - `block.cpp`
   - `board.h`
   - `board.cpp`
   - `unblock.cpp`
-2. Compile & Link
+- Compile & Link
 
     ```
     $ g++ -c -o unblock.o unblock.cpp
@@ -48,7 +48,7 @@
     $ g++ -o unblock.exe unblock.o block.o board.o
     ```
 
-3. Run
+- Run
   - `$ unblock.exe`
 
 ##Source File Conventions
