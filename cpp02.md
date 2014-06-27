@@ -171,8 +171,8 @@ int main()
 - Multi-line string literals
 
     ```c++
-      string str = "This is a very very long sentence, "
-                   "which is not long enough.";
+    string str = "This is a very very long sentence, "
+                 "which is not long enough.";
     ```
 
 - Null-terminated string
@@ -184,23 +184,23 @@ int main()
 - Modify C string constants
 
     ```c++
-      char *str = "Singin' in the Rain";
-      str[6] = 'g';
+    char *str = "Singin' in the Rain";
+    str[6] = 'g';
     ```
 
 - Forget escape code
 
     ```c++
-      string path = "c:\Windows\System32";   // Wrong!
-      string path = "c:\\Windows\\System32"; // Correct!
+    string path = "c:\Windows\System32";   // Wrong!
+    string path = "c:\\Windows\\System32"; // Correct!
     ```
 
 - Forget terminate char
 
     ```c++
-      char a[4] = "Good";  // Not enough space
-      char b[5] = "Good";
-      b[4] = 'x';
+    char a[4] = "Good";  // Not enough space
+    char b[5] = "Good";
+    b[4] = 'x';
     ```
 
 ## Variables
