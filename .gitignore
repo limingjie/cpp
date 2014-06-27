@@ -1,6 +1,9 @@
 # Executables
 *.exe
 
+# Assembly
+*.s
+
 # Compiled Object files
 *.slo
 *.lo

@@ -109,7 +109,7 @@ MACRO = definition
 - Warning
   - `-Wall`
 - Assembly
-  - `-s`
+  - `-S`
 - Optimization
   - `-O1` `-O2` `-O3` `-Os`
 - C++11
