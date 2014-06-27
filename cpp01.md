@@ -50,7 +50,7 @@ $ g++ -o unblock.exe unblock.o block.o board.o
 
 ##Further Optimize Executable Size
  - Optimization flags
-   -O1 -O2 -O3 -Os
+   - `-O1` `-O2` `-O3` `-Os`
  - Discards symbols
    - `$ strip -s hello.exe`
  - UPX
