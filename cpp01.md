@@ -100,6 +100,7 @@ target: dependencies
 ...
 [tab] command n
 ```
+- `%.o: %.cpp`
 - Micros
 ```
 MACRO = definition

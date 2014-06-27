@@ -83,8 +83,30 @@ std::cout << "i = " << i << std::endl;
 - Void type
   - void
 
-### Constants
-- Numerals
+### Lab02: type.cpp
+
+### Type Common Mistakes
+- Infinite loop
+```c++
+for (size_t i = 100; i >= 0; --i)
+```
+- Overflow
+  - Assigned value out of range
+```c++
+char         a = 1024;
+int          i = UINT_MAX;
+unsigned int u = -16;
+```
+  - Caution on Calculation
+    - `a * b / c` or `a / c * b`
+    - `a + b - c` or `a - c + b`
+- Precision
+  - floating-point types
+  - type cast
+
+## Constants
+### Numerals
+- Suffixes
 
 |Suffix     |Type modifier   |
 |:----------|:---------------|
@@ -94,8 +116,17 @@ std::cout << "i = " << i << std::endl;
 |f or F     |float           |
 |l or L     |long double     |
 
-- Character and string literals
-  - Escape Code
+  - `10ull  // unsigned long long`
+  - `10.0f  // float`
+  - `10.0l  // long double`
+
+- Decimal / Octal / Hexadecimal
+  - `32     // Decimal`
+  - `040    // Octal`
+  - `0x20   // Hexadecimal`
+
+### Character and string literals
+- Escape Code
 
 | Escape code | Description           |
 |:------------|:----------------------|
@@ -111,36 +142,29 @@ std::cout << "i = " << i << std::endl;
 | \?          | question mark (?)     |
 | \\          | backslash (\)         |
 
-  - Character
-    - `'a'` `'A'` `'1'` `'\t'`
-  - String literals
-    - `"Hello World!"`
-    - `"Hello World!\n"`
-  - Multi-line string literals
+- Character
+  - `'a'` `'A'` `'1'` `'\t'`
+- String literals
+  - `"Hello World!"`
+  - `"Hello\tWorld!\n"`
+- Multi-line string literals
 ```c++
   string str = "This is a very very long sentence, "
                "which is not long enough."
 ```
 
-### Variables
+### Constants Common Mistakes
+- Modify C String Constants
+```c++
+  char *str = "Singin' in the Rain";
+  str[6] = 'g';
+```
+- Forgot Escape code
+  - `string path = "c:\Windows\System32";   // Wrong!`
+  - `string path = "c:\\Windows\\System32"; // Correct!`
+
+## Variables
 - TODO
-
-### Lab02: type.cpp
-
-### Type Common Mistakes
-- Infinite loop
-```c++
-for (size_t i = 100; i >= 0; --i)
-```
-- Overflow
-```c++
-char         a = 1024;
-int          i = UINT_MAX;
-unsigned int u = -16;
-```
-- Precision
-  - floating-point types
-  - type cast
 
 ## Operators
 ### Arithmetic operators
@@ -232,15 +256,15 @@ unsigned int u = -16;
 ### Flow Control Common Mistakes
 - Statement not statements
 ```c++
-// statement2 is not in if statement
+// statement 2 is not in if statement
 if (condition)
-    statement1;
-    statement2; // always be executed
+    statement 1;
+    statement 2; // always be executed
 // put statements in a block
 if (condition)
 {
-    statement1;
-    statement2;
+    statement 1;
+    statement 2;
 }
 ```
 - Extra semicolon
