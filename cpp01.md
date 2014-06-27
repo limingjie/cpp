@@ -8,25 +8,24 @@
 - UPX (http://upx.sourceforge.net/)
 
 ##lab01: Say Hello
-- Single source file
-  - `hello.cpp`
+- Single source file `hello.cpp`
 
-        ```c++
-        #include <iostream>
+    ```c++
+    #include <iostream>
 
-        // Never using namespace globally
-        // using namespace std;
+    // Never using namespace globally
+    // using namespace std;
 
-        int main()
-        {
-            using namespace std;
+    int main()
+    {
+        using namespace std;
 
-            cout << "Hello World!\nPrint Enter to continue..." << endl;
-            cin.ignore();
+        cout << "Hello World!\nPrint Enter to continue..." << endl;
+        cin.ignore();
 
-            return 0;
-        }
-        ```
+        return 0;
+    }
+    ```
 
 - Compile & Link
   - `$ g++ -o hello.exe hello.cpp`
