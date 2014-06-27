@@ -20,19 +20,19 @@
 
 ### Header File & Namespace
 - What is namespace?
-- Do not using namespace globally
+- The disadvantage of using namespace globally
 
 ### Entry Point & Return Value
 - Standard `int main(int argc, char **argv)`
 - Check return value `$ echo $?`
 
-### Statements
-- Statement
+### Statement
+- Statements
 ```c++
 int i = 0;
 std::cout << "i = " << i << std::endl;
 ```
-- Compound statement
+- Compound statement / Block
 ```c++
 {
     std::string s = "foo bar!";
@@ -44,7 +44,7 @@ std::cout << "i = " << i << std::endl;
 ### Keywords
 - http://en.cppreference.com/w/cpp/keyword
 
-### Identifier
+### Identifiers
 - Names of functions, variables and classes
 - Naming rule
   - Case Sensitive
@@ -70,8 +70,8 @@ std::cout << "i = " << i << std::endl;
 
 |Type        |Range                        |Precision           |Size        |
 |:-----------|:----------------------------|:-------------------|:-----------|
-|float       |±1.18×10^38 to ±3.4×10^38    |~ 7 decimal digits  |32 bits     |
-|double      |±2.23×10^308 to ±1.80×10^308 |~ 15 decimal digits |64 bits     |
+|float       |±1.18×10<sup>38</sup> to ±3.4×10<sup>38</sup>    |~ 7 decimal digits  |32 bits     |
+|double      |±2.23×10<sup>308</sup> to ±1.80×10<sup>308</sup> |~ 15 decimal digits |64 bits     |
 |long double | -                           |-                   |80-128 bits |
 
 - Character types
@@ -84,7 +84,7 @@ std::cout << "i = " << i << std::endl;
 - Void type
   - void
 
-### Lab02: type.cpp
+### lab02: type.cpp
 
 ### Type Common Mistakes
 - Infinite loop
