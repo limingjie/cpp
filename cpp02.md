@@ -1,23 +1,24 @@
 # Basics
 
 ## Basic Program Structure
+### hello.cpp
 
-```c++
-  #include <iostream>
+    ```c++
+    #include <iostream>
 
-  // Never using namespace globally
-  // using namespace std;
+    // Never using namespace globally
+    // using namespace std;
 
-  int main()
-  {
-      using namespace std;
+    int main()
+    {
+        using namespace std;
 
-      cout << "Hello World!\nPrint Enter to continue..." << endl;
-      cin.ignore();
+        cout << "Hello World!\nPrint Enter to continue..." << endl;
+        cin.ignore();
 
-      return 0;
-  }
-```
+        return 0;
+    }
+    ```
 
 ### Header File & Namespace
 - What is namespace?
@@ -51,8 +52,12 @@
 - Names of functions, variables and classes
 - Naming rule
   - Case Sensitive
-    - `int SingingInTheRain;`
-    - `int SingIngInTheRain;`
+
+        ```c++
+        `int SingingInTheRain;`
+        `int SingIngInTheRain;`
+        ```
+
   - Only allow alphabetic characters, digits and underscore
   - Leading digit is not allowed
   - Keywords is not allowed
@@ -115,9 +120,12 @@
 ## Constants
 ### Numerals
 - Suffixes
-  - `10ull  // unsigned long long`
-  - `10.0f  // float`
-  - `10.0l  // long double`
+
+    ```c++
+    10ull  // unsigned long long
+    10.0f  // float
+    10.0l  // long double
+    ```
 
  | Suffix      | Type modifier    |
  | :---------- | :--------------- |
@@ -128,9 +136,12 @@
  | l or L      | long double      |
 
 - Decimal / Octal / Hexadecimal
-  - `32     // Decimal`
-  - `040    // Octal`
-  - `0x20   // Hexadecimal`
+
+    ```c++
+    32     // Decimal
+    040    // Octal
+    0x20   // Hexadecimal
+    ```
 
 ### Character and string literals
 - Escape Code
@@ -152,8 +163,11 @@
 - Character
   - `'a'` `'A'` `'1'` `'\t'`
 - String literals
-  - `"Hello World!"`
-  - `"Hello\tWorld!\n"`
+
+    ```c++
+    "Hello World!"
+    "Hello\tWorld!\n"
+    ```
 - Multi-line string literals
 
     ```c++
@@ -195,19 +209,27 @@
   - Specific type
 - lvalue and rvalue
   - lvalue - may appear on either side of an assignment
-    - `double price = 0;`
-    - `price = price * 0.9;`
+
+        ```c++
+        double price = 0;
+        price = price * 0.9;
+        ```
+
   - rvalue - may appear on right but not left-hand side of an assignment
     - `0 = 1;`
 - Initialize
-  - `int value(10); // direct initialization`
-  - `int value = 10; // copy initialization`
+
+    ```c++
+    int value(10); // direct initialization
+    int value = 10; // copy initialization
+    ```
+
 - Scope
   - global scope
   - local scope
   - statement scope
 
-### lab02: scope.exe
+### lab02: scope.cpp
 
 ## Operators
 ### Arithmetic operators
@@ -277,12 +299,19 @@
   - `100 / 3.0`
 - Side effect of increment/decrement
   - A deeper look at x++
-    - `y = x;`
-    - `x = x + 1;`
-    - `return y;`
+
+        ```c++
+        y = x;
+        x = x + 1;
+        return y;
+        ```
   - Undefined behavior
-    - `x = y++ + y++ + y++;`
-    - `x = ++y + ++y + ++y;`
+
+        ```c++
+        x = y++ + y++ + y++;
+        x = ++y + ++y + ++y;
+        ```
+
 - Logical or Bitwise
 
 ## Flow Control
