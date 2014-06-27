@@ -6,8 +6,8 @@
 //
 // Compiled successfully with g++ 4.8.1
 //
-#include "block.hpp"
-#include "board.hpp"
+#include "block.h"
+#include "board.h"
 
 Block::Block()
 {

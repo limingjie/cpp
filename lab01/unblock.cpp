@@ -8,8 +8,8 @@
 //
 #include <iostream>
 
-#include "block.hpp"
-#include "board.hpp"
+#include "block.h"
+#include "board.h"
 
 int main()
 {

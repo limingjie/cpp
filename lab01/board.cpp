@@ -10,7 +10,7 @@
 #include <iomanip> // setw
 #include <algorithm> // sort
 
-#include "board.hpp"
+#include "board.h"
 
 Board::~Board()
 {

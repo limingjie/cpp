@@ -12,7 +12,7 @@
 #include <vector>
 #include <string>
 
-#include "block.hpp"
+#include "block.h"
 
 typedef std::vector<size_t> BoardData;
 
