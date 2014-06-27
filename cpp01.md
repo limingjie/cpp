@@ -105,6 +105,8 @@ target: dependencies
   - `-L` `-Lpath`
 - Link to library
   - `-l` `-lstatic`
+- Debug Information
+  - `-g`
 
 ##Further Optimize Executable Size
 - Optimization flags
