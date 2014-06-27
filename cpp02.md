@@ -14,11 +14,11 @@
 
 - Floating-point types (IEEE 754)
 
-|Type        |Range                       |Precision             |Size         |
-|:-----------|:---------------------------|:---------------------|:------------|
-|float       |±1.18×10−38 to ±3.4×1038    | ~ 7 decimal digits   | 32 bits     |
-|double      |±2.23×10−308 to ±1.80×10308 | ~ 15 decimal digits  | 64 bits     |
-|long double | -                          | -                    | 80-128 bits |
+|Type        |Range                        |Precision           |Size        |
+|:-----------|:----------------------------|:-------------------|:-----------|
+|float       |±1.18×10^38 to ±3.4×10^38    |~ 7 decimal digits  |32 bits     |
+|double      |±2.23×10^308 to ±1.80×10^308 |~ 15 decimal digits |64 bits     |
+|long double | -                           |-                   |80-128 bits |
 
 - Character types
   - char
