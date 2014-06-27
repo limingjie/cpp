@@ -85,33 +85,42 @@ std::cout << "i = " << i << std::endl;
 
 ### Constants
 - Numerals
- |Suffix     |Type modifier   |
- |:----------|:---------------|
- |u or U     |unsigned        |
- |l or L     |long            |
- |ll or LL   |long long       |
- |f or F     |float           |
- |l or L     |long double     |
+
+|Suffix     |Type modifier   |
+|:----------|:---------------|
+|u or U     |unsigned        |
+|l or L     |long            |
+|ll or LL   |long long       |
+|f or F     |float           |
+|l or L     |long double     |
+
 - Character and string literals
   - Escape Code
- | Escape code | Description           |
- |:------------|:----------------------|
- | \n          | newline               |
- | \r          | carriage return       |
- | \t          | tab                   |
- | \v          | vertical tab          |
- | \b          | backspace             |
- | \f          | form feed (page feed) |
- | \a          | alert (beep)          |
- | \'          | single quote (')      |
- | \"          | double quote (")      |
- | \?          | question mark (?)     |
- | \\          | backslash (\)         |
+
+| Escape code | Description           |
+|:------------|:----------------------|
+| \n          | newline               |
+| \r          | carriage return       |
+| \t          | tab                   |
+| \v          | vertical tab          |
+| \b          | backspace             |
+| \f          | form feed (page feed) |
+| \a          | alert (beep)          |
+| \'          | single quote (')      |
+| \"          | double quote (")      |
+| \?          | question mark (?)     |
+| \\          | backslash (\)         |
+
   - Character
     - `'a'` `'A'` `'1'` `'\t'`
   - String literals
     - `"Hello World!"`
     - `"Hello World!\n"`
+  - Multi-line string literals
+```c++
+  string str = "This is a very very long sentence, "
+               "which is not long enough."
+```
 
 ### Variables
 
