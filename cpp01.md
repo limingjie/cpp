@@ -9,33 +9,33 @@
 
 ##lab01: Say Hello
 - Single source file
-  - hello.cpp
+  - `hello.cpp`
 ```c++
- #include <iostream>
+  #include <iostream>
 
- // Never using namespace globally
- // using namespace std;
+  // Never using namespace globally
+  // using namespace std;
 
- int main()
- {
-     using namespace std;
+  int main()
+  {
+      using namespace std;
 
-     cout << "Hello World!\nPrint any key to continue..." << endl;
-     cin.ignore();
+      cout << "Hello World!\nPrint any key to continue..." << endl;
+      cin.ignore();
 
-     return 0;
- }
+      return 0;
+  }
 ```
 - Compile & Link
   - `$ g++ -o hello.exe hello.cpp`
 
 ##lab01: Complex Case
 - Multiple source files
-  - block.h
-  - block.cpp
-  - board.h
-  - board.cpp
-  - unblock.cpp
+  - `block.h`
+  - `block.cpp`
+  - `board.h`
+  - `board.cpp`
+  - `unblock.cpp`
 - Compile & Link
 ```
 $ g++ -c -o unblock.o unblock.cpp
@@ -56,12 +56,12 @@ $ g++ -o unblock.exe unblock.o block.o board.o
 
 ##Include Guard
 ```c++
-#ifndef __BOARD_H__
-#define __BOARD_H__
+  #ifndef __BOARD_H__
+  #define __BOARD_H__
 
-#include "block.h"
+  #include "block.h"
 
-#endif // __BOARD_H__
+  #endif // __BOARD_H__
 
 ```
 
