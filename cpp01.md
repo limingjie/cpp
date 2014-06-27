@@ -1,14 +1,15 @@
 #Hello World!
 
 ##Setup C++ Development Environment
- - MinGW (http://nuwen.net/mingw.html)
-   - GCC
-   - Make
- - Dependency Walker (http://www.dependencywalker.com/)
- - UPX (http://upx.sourceforge.net/)
+- MinGW (http://nuwen.net/mingw.html)
+  - GCC
+  - Make
+- Dependency Walker (http://www.dependencywalker.com/)
+- UPX (http://upx.sourceforge.net/)
 
 ##lab01: Say Hello
- - hello.cpp
+- Single source file
+  - hello.cpp
 ```c++
  #include <iostream>
 
@@ -25,26 +26,17 @@
      return 0;
  }
 ```
- - Compile & Link
-   - `$ g++ -o hello.exe hello.cpp`
-
-##More Options of g++
- - Warning
-   - `-Wall`
- - Assembly
-   - `-s`
- - Optimization
-   - `-O1` `-O2` `-O3` `-Os`
- - C++11
-   - `-std=c++11`
- - Include Additional Path for head files
-   - `-I` `-Ipath`
- - Include Additional Path for library
-   - `-L` `-Lpath`
- - Link to library
-   - `-l` `-lstatic`
+- Compile & Link
+  - `$ g++ -o hello.exe hello.cpp`
 
 ##lab01: Complex Case
+- Multiple source files
+  - block.h
+  - block.cpp
+  - board.h
+  - board.cpp
+  - unblock.cpp
+- Compile & Link
 ```
 $ g++ -c -o unblock.o unblock.cpp
 $ g++ -c -o block.o block.cpp
@@ -53,16 +45,43 @@ $ g++ -o unblock.exe unblock.o block.o board.o
 ```
 
 ##Compile & Link
- - Compile
- - Link
+- Compile
+- Link
+
+##Makefile
+- Make
+  - `$ make`
+  - `$ make -f filename`
+- Basic Makefile
+```
+target: dependencies
+[tab] system command
+```
+
+##More Options of g++
+- Warning
+  - `-Wall`
+- Assembly
+  - `-s`
+- Optimization
+  - `-O1` `-O2` `-O3` `-Os`
+- C++11
+  - `-std=c++11`
+- Include Additional Path for head files
+  - `-I` `-Ipath`
+- Include Additional Path for library
+  - `-L` `-Lpath`
+- Link to library
+  - `-l` `-lstatic`
 
 ##Further Optimize Executable Size
- - Optimization flags
-   - `-O1` `-O2` `-O3` `-Os`
- - Discards symbols
-   - `$ strip -s hello.exe`
- - UPX
-   - `$ UPX -9 hello.exe`
+- Optimization flags
+  - `-O1` `-O2` `-O3` `-Os`
+- Discards symbols
+  - `$ strip -s hello.exe`
+- UPX
+  - `$ UPX -9 hello.exe`
+  - `$ UPX --ultra-brute hello.exe`
 
 ##Include Guard
 ```c++
