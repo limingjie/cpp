@@ -58,21 +58,21 @@ std::cout << "i = " << i << std::endl;
 ### Primitive Built-in Types
 - Integer types (signed / unsigned)
 
-|Signed Type|Unsigned Type      |Size             |
-|:----------|:------------------|:----------------|
-|char       |unsigned char      |at least 8 bits  |
-|short      |unsigned short     |at least 16 bits |
-|int        |unsigned int       |at least 16 bits |
-|long       |unsigned long      |at least 32 bits |
-|long long  |unsigned long long |at least 64 bits |
+  | Signed Type | Unsigned Type       | Size              |
+  | :---------- | :------------------ | :---------------- |
+  | char        | unsigned char       | at least 8 bits   |
+  | short       | unsigned short      | at least 16 bits  |
+  | int         | unsigned int        | at least 16 bits  |
+  | long        | unsigned long       | at least 32 bits  |
+  | long long   | unsigned long long  | at least 64 bits  |
 
 - Floating-point types (IEEE 754)
 
- | Type         | Range                                            | Precision            | Size         |
- | :----------- | :----------------------------                    | :------------------- | :----------- |
- | float        | ±1.18×10<sup>38</sup> to ±3.4×10<sup>38</sup>    | ~ 7 decimal digits   | 32 bits      |
- | double       | ±2.23×10<sup>308</sup> to ±1.80×10<sup>308</sup> | ~ 15 decimal digits  | 64 bits      |
- | long double  | -                                                | -                    | 80-128 bits  |
+  | Type         | Range                                            | Precision            | Size         |
+  | :----------- | :----------------------------                    | :------------------- | :----------- |
+  | float        | ±1.18×10<sup>38</sup> to ±3.4×10<sup>38</sup>    | ~ 7 decimal digits   | 32 bits      |
+  | double       | ±2.23×10<sup>308</sup> to ±1.80×10<sup>308</sup> | ~ 15 decimal digits  | 64 bits      |
+  | long double  | -                                                | -                    | 80-128 bits  |
 
 - Character types
   - char
@@ -112,13 +112,13 @@ unsigned int u = -16;
   - `10.0f  // float`
   - `10.0l  // long double`
 
-|Suffix     |Type modifier   |
-|:----------|:---------------|
-|u or U     |unsigned        |
-|l or L     |long            |
-|ll or LL   |long long       |
-|f or F     |float           |
-|l or L     |long double     |
+ | Suffix      | Type modifier    |
+ | :---------- | :--------------- |
+ | u or U      | unsigned         |
+ | l or L      | long             |
+ | ll or LL    | long long        |
+ | f or F      | float            |
+ | l or L      | long double      |
 
 - Decimal / Octal / Hexadecimal
   - `32     // Decimal`
@@ -128,19 +128,19 @@ unsigned int u = -16;
 ### Character and string literals
 - Escape Code
 
-| Escape code | Description           |
-|:------------|:----------------------|
-| \n          | newline               |
-| \r          | carriage return       |
-| \t          | tab                   |
-| \v          | vertical tab          |
-| \b          | backspace             |
-| \f          | form feed (page feed) |
-| \a          | alert (beep)          |
-| \'          | single quote (')      |
-| \"          | double quote (")      |
-| \?          | question mark (?)     |
-| \\          | backslash (\)         |
+ | Escape code   | Description             |
+ | :------------ | :---------------------- |
+ | \n            | newline                 |
+ | \r            | carriage return         |
+ | \t            | tab                     |
+ | \v            | vertical tab            |
+ | \b            | backspace               |
+ | \f            | form feed (page feed)   |
+ | \a            | alert (beep)            |
+ | \'            | single quote (')        |
+ | \"            | double quote (")        |
+ | \?            | question mark (?)       |
+ | \\            | backslash (\)           |
 
 - Character
   - `'a'` `'A'` `'1'` `'\t'`
