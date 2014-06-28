@@ -165,8 +165,8 @@ int main()
 - String literals
 
     ```c++
-    char *foo = "Hello World!"
-    char *bar = "Hello\tWorld!\n"
+    char *foo = "Hello World!";
+    char *bar = "Hello\tWorld!\n";
     ```
 - Multi-line string literals
 
