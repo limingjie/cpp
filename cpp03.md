@@ -2,6 +2,7 @@
 
 ##Memory Layout
 ###Typical Memory Layout of Running Process
+- Memory Layout
 
  |              | Memory Layout              |                                       |
  | :----------- | :------------------------: | :------------------------------------ |
@@ -33,6 +34,7 @@
   - Elements
   - Same type
   - Index
+
 ###Defining Array
 - Constant expression
   - Integral literal constant
@@ -65,10 +67,9 @@
 - `char foo[12] = "Hello world";`
 
  | Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
- |:------|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:---|:---|
+ |:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|
  | foo   | H | e | l | l | o |   | w | o | r | l | d  | \0 |
 
 ##Pointer
-
 ##string
 ##iostream
