@@ -80,6 +80,7 @@
 
 ### Multidimentioned Arrays
 - Sample
+
     ```c++
     int ia[3][5] = {      // 3x5 array
         {0, 1, 2, 3, 4},  // ia[0]
