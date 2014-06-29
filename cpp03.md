@@ -46,10 +46,10 @@
         double rates[count];   // error
         ```
 
-  - Initialize Array
-    - Elements of an array of built-in type defined outside the body of a function are initialized to zero.
-    - Elements of an array of built-in type defined inside of body of a function are uninitialized.
-    - Class type are initialized by the default constructor regardless of where the array is defined.
+- Initialize Array
+  - Elements of an array of built-in type defined outside the body of a function are initialized to zero.
+  - Elements of an array of built-in type defined inside of body of a function are uninitialized.
+  - Class type are initialized by the default constructor regardless of where the array is defined.
 
     ```c++
     int a[10] = {0, 1, 2, 3, 4, 5};
@@ -64,6 +64,7 @@
   - `char foo[12] = "Hello world";`
 
  | Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+ |:------|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:---|:---|
  | foo   | H | e | l | l | o |   | w | o | r | l | d  | \0 |
 
 ##Pointer
