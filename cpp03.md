@@ -3,26 +3,31 @@
 ##Memory Layout
 ###Typical Memory Layout of Running Process
 
- |              | Memory Layout         |
- | :----------- | :-------------------: |
- | High address | args & env var        |
- |              | stack                 |
- |              | &#124;                |
- |              | v                     |
- |              | un-used               |
- |              | ^                     |
- |              | &#124;                |
- |              | heap                  |
- |              | uninitialized data    |
- |              | initialized data      |
- | Low address  | text                  |
+- Layout
 
-### Sections
-- Text segment - Code segment
-- Initialized data segment - Data segment (global variables and static variables)
-- Uninitialized data segment - bss (block started by symbol)
+ |              | Memory Layout              |                                                      |
+ | :----------- | :-------------------:      |                                                      |
+ | High address | args & env var             |                                                      |
+ |              | stack                      |                                                      |
+ |              | &#124;                     |                                                      |
+ |              | v                          |                                                      |
+ |              |                            |                                                      |
+ |              | un-used                    |                                                      |
+ |              |                            |                                                      |
+ |              | ^                          |                                                      |
+ |              | &#124;                     |                                                      |
+ |              | heap                       |                                                      |
+ |              | Uninitialized data segment | bss (block started by symbol)                        |
+ |              | Initialized data segment   | Data segment (global variables and static variables) |
+ | Low address  | Text segment               | Code segment                                         |
+
 - Stack
+  - LIFO
+  - Call Stack
 - Heap
+  - Dynamic memory allocation
+  - External Fragmentation
+![Image](https://github.com/limingjie/cpp/blob/master/images/ExternalFragmentation.png?raw=true)
 
 ##Array and Pointer
 ##string
