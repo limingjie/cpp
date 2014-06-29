@@ -79,7 +79,7 @@
  | foo   | H | e | l | l | o |   | w | o | r | l | d  | \0 |
 
 ### Multidimentioned Arrays
-
+- Sample
     ```c++
     int ia[3][5] = {      // 3x5 array
         {0, 1, 2, 3, 4},  // ia[0]
@@ -87,6 +87,12 @@
         {10, 11}          // ia[2]
     };
     ```
+
+### Arrays Common Mistakes
+- Index starts from 0
+- The last element of `int a[size];` is `a[size - 1]`
+- Do not define array with non-const variable
+- Random value of uninitialized array
 
 ##Pointers
 ##string
