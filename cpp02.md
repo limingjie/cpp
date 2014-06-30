@@ -22,7 +22,8 @@ int main()
 
 ### Header File & Namespace
 - What is namespace?
-- The disadvantage of using namespace globally
+http://en.cppreference.com/w/cpp/language/namespace#Using-directives
+- The disadvantage of using namespace globally.
 
 ### Entry Point & Return Value
 - Standard `int main(int argc, char **argv)`
