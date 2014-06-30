@@ -92,6 +92,35 @@ int main()
 - Void type
   - void
 
+### typedef
+- http://en.cppreference.com/w/cpp/language/typedef
+- The typedef declaration provides a way to create an alias that can be used anywhere in place of a (possibly complex) type name.
+- Syntax `typedef type_declaration;`
+- Example
+
+    ```c++
+    // simple typedef
+    typedef unsigned long ulong;
+
+    // the following two objects have the same type
+    unsigned long l1;
+    ulong l2;
+
+    // more complicated typedef
+    typedef int int_t, *intp_t, (&fp)(int, ulong), arr_t[10];
+
+    // the following two objects have the same type
+    int a1[10];
+    arr_t a2;
+
+    // common C idiom to avoid having to write "struct S"
+    typedef struct {int a; int b;} S, *pS;
+
+    // the following two objects have the same type
+    pS ps1;
+    S* ps2;
+    ```
+
 ### lab02: type.cpp
 
 ### Type Common Mistakes
@@ -165,8 +194,8 @@ int main()
 - String literals
 
     ```c++
-    char *foo = "Hello World!"
-    char *bar = "Hello\tWorld!\n"
+    char *foo = "Hello World!";
+    char *bar = "Hello\tWorld!\n";
     ```
 - Multi-line string literals
 
