@@ -78,7 +78,7 @@
  |:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|
  | foo   | H | e | l | l | o |   | w | o | r | l | d  | \0 |
 
-### Multidimentioned Arrays
+###Multidimentioned Arrays
 - Sample
 
     ```c++
@@ -137,8 +137,82 @@
  | T * const       | constant pointer to object          |
  | const T * const | constant pointer to constant object |
 
+###lab03: array.cpp, pointer.cpp
+
 ##Reference
-##Function
-###Value/Reference/Address
+###lvalue Reference
+
+  ```c++
+  T &ref = object;
+  T &ref (object);
+  T &ref {object};
+  ```
+###rvalue Reference
+
+  ```c++
+  T &&ref = object;
+  T &&ref (object);
+  T &&ref {object};
+  ```
+
+###Examples
+
+  ```c++
+  int n = 10;
+  int &rn = n; // refer to lvalue
+  int &re = 1; // error
+  int &&r = 1; // refer to rvalue
+  ```
+
+##Functions
+###Math Functions
+![Image](https://github.com/limingjie/cpp/blob/master/images/MathFunction.png?raw=true)
+
+###Declaration
+
+    ```c++
+    T f([argument list]) [const]
+    {
+        statements;
+    }
+    ```
+
+###Default arguments
+
+    ```c++
+    int person(string name, string title = "Mr.");
+    ```
+
+###Function Overload
+
+    ```c++
+    int func(int a, int b, int c);
+    int func(double a, double b, double c);
+    int func(int a, double b);
+    int func(string s);
+    ```
+
+###Pass Arguments
+- Examples
+
+    ```c++
+    swap(a, b);    // Will this work or not?
+    swap(&a, &b);  // Will this work or not?
+    ```
+
+- Pass by value
+  - `void swap(int a, int b);`
+- Pass by reference
+  - `void swap(int &a, int &b);`
+- Pass address
+  - `void swap(int *a, int *b);`
+
+###lab03: function.cpp
+
 ##string
+
+http://en.cppreference.com/w/cpp/string
+
 ##iostream
+
+http://en.cppreference.com/w/cpp/io/basic_iostream
