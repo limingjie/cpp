@@ -203,7 +203,7 @@ http://en.cppreference.com/w/cpp/language/namespace#Using-directives
  | \'            | single quote (')        |
  | \"            | double quote (")        |
  | \?            | question mark (?)       |
- | \\            | backslash (\)           |
+ | \\\\          | backslash (\\)          |
 
 - Character
   - `'a'` `'A'` `'1'` `'\t'`

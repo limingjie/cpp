@@ -99,5 +99,46 @@
 - Random value of uninitialized array
 
 ##Pointers
+###Concept
+- Reference a location in memory
+- Type
+
+###Syntax
+- Declaration `T *var;`
+
+###Address-of Operator `&`
+- The unary address-of operator (&) takes the address of its operand.
+
+###Indirection Operator `*`
+- The unary indirection operator (*) dereferences a pointer; that is, it converts a pointer value to an l-value.
+
+###Address of Array
+
+###Example
+  ```c++
+  int n = 10;
+  int *pn = &n;
+  int **ppn = &pn;
+
+  cout << "Value of n:\n"
+       << "direct value: " << n << endl
+       << "indirect value: " << *pn << endl
+       << "doubly indirect value: " << **ppn << endl
+       << "address of n: " << pn << endl
+       << "address of n via indirection: " << *ppn << endl
+  ```
+
+###Constness
+
+ | Syntax          | meaning                             |
+ | :-------------- | :---------------------------------- |
+ | const T *       | pointer to constant object          |
+ | T const *       | pointer to constant object          |
+ | T * const       | constant pointer to object          |
+ | const T * const | constant pointer to constant object |
+
+##Reference
+##Function
+###Value/Reference/Address
 ##string
 ##iostream
