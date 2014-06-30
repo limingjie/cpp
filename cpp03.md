@@ -132,12 +132,12 @@ cout << "Value of n:\n"
 ###Constness
 - const
 
- | Syntax          | meaning                             |
- | :-------------- | :---------------------------------- |
- | const T *       | pointer to constant object          |
- | T const *       | pointer to constant object          |
- | T * const       | constant pointer to object          |
- | const T * const | constant pointer to constant object |
+ | Syntax            | meaning                             |
+ | :---------------- | :---------------------------------- |
+ | `const T *`       | pointer to constant object          |
+ | `T const *`       | pointer to constant object          |
+ | `T * const`       | constant pointer to object          |
+ | `const T * const` | constant pointer to constant object |
 
 ###lab03: array.cpp, pointer.cpp
 
