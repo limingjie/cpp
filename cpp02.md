@@ -187,7 +187,7 @@ int main()
  | \'            | single quote (')        |
  | \"            | double quote (")        |
  | \?            | question mark (?)       |
- | \\            | backslash (\)           |
+ | \\\\          | backslash (\\)          |
 
 - Character
   - `'a'` `'A'` `'1'` `'\t'`
