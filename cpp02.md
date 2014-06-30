@@ -21,6 +21,21 @@ int main()
 ```
 
 ### Header File & Namespace
+- Include directive
+
+    ```c++
+    // Searches standard include directory, including paths specified by -I
+    #include <iostream>
+    // Include C header file in C++
+    #include <cstring>
+    // Include C header file directly
+    #include <stdio.h>
+    // Search current path first, then search standard include directory
+    #include "block.h"
+    // Path to header file
+    #include <boost/filesystem.hpp>
+    ```
+
 - What is namespace?
 http://en.cppreference.com/w/cpp/language/namespace#Using-directives
 - The disadvantage of using namespace globally.
