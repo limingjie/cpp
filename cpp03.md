@@ -130,6 +130,7 @@ cout << "Value of n:\n"
 ```
 
 ###Constness
+- const
 
  | Syntax          | meaning                             |
  | :-------------- | :---------------------------------- |
