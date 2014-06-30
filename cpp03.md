@@ -116,18 +116,18 @@
 
 ###Example
 
-  ```c++
-  int n = 10;
-  int *pn = &n;
-  int **ppn = &pn;
+```c++
+int n = 10;
+int *pn = &n;
+int **ppn = &pn;
 
-  cout << "Value of n:\n"
-       << "direct value: " << n << endl
-       << "indirect value: " << *pn << endl
-       << "doubly indirect value: " << **ppn << endl
-       << "address of n: " << pn << endl
-       << "address of n via indirection: " << *ppn << endl
-  ```
+cout << "Value of n:\n"
+     << "direct value: " << n << endl
+     << "indirect value: " << *pn << endl
+     << "doubly indirect value: " << **ppn << endl
+     << "address of n: " << pn << endl
+     << "address of n via indirection: " << *ppn << endl
+```
 
 ###Constness
 
@@ -143,27 +143,28 @@
 ##Reference
 ###lvalue Reference
 
-  ```c++
-  T &ref = object;
-  T &ref (object);
-  T &ref {object};
-  ```
+```c++
+T &ref = object;
+T &ref (object);
+T &ref {object};
+```
+
 ###rvalue Reference
 
-  ```c++
-  T &&ref = object;
-  T &&ref (object);
-  T &&ref {object};
-  ```
+```c++
+T &&ref = object;
+T &&ref (object);
+T &&ref {object};
+```
 
 ###Examples
 
-  ```c++
-  int n = 10;
-  int &rn = n; // refer to lvalue
-  int &re = 1; // error
-  int &&r = 1; // refer to rvalue
-  ```
+```c++
+int n = 10;
+int &rn = n; // refer to lvalue
+int &re = 1; // error
+int &&r = 1; // refer to rvalue
+```
 
 ##Functions
 ###Math Functions
@@ -171,27 +172,27 @@
 
 ###Declaration
 
-  ```c++
-  T f([argument list]) [const]
-  {
-      statements;
-  }
-  ```
+```c++
+T f([argument list]) [const]
+{
+    statements;
+}
+```
 
 ###Default arguments
 
-  ```c++
-  int person(string name, string title = "Mr.");
-  ```
+```c++
+int person(string name, string title = "Mr.");
+```
 
 ###Function Overload
 
-  ```c++
-  int func(int a, int b, int c);
-  int func(double a, double b, double c);
-  int func(int a, double b);
-  int func(string s);
-  ```
+```c++
+int func(int a, int b, int c);
+int func(double a, double b, double c);
+int func(int a, double b);
+int func(string s);
+```
 
 ###Pass Arguments
 - Examples
