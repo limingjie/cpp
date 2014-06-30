@@ -115,6 +115,7 @@
 ###Address of Array
 
 ###Example
+
   ```c++
   int n = 10;
   int *pn = &n;
@@ -170,27 +171,27 @@
 
 ###Declaration
 
-    ```c++
-    T f([argument list]) [const]
-    {
-        statements;
-    }
-    ```
+  ```c++
+  T f([argument list]) [const]
+  {
+      statements;
+  }
+  ```
 
 ###Default arguments
 
-    ```c++
-    int person(string name, string title = "Mr.");
-    ```
+  ```c++
+  int person(string name, string title = "Mr.");
+  ```
 
 ###Function Overload
 
-    ```c++
-    int func(int a, int b, int c);
-    int func(double a, double b, double c);
-    int func(int a, double b);
-    int func(string s);
-    ```
+  ```c++
+  int func(int a, int b, int c);
+  int func(double a, double b, double c);
+  int func(int a, double b);
+  int func(string s);
+  ```
 
 ###Pass Arguments
 - Examples
