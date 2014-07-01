@@ -22,6 +22,8 @@
 - LIFO
 - Call Stack
 
+![Image](https://github.com/limingjie/cpp/blob/master/images/CallStack.png?raw=true)
+
 ###Heap
 - Dynamic memory allocation
 - External Fragmentation
