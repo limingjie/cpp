@@ -61,7 +61,7 @@ No code is generated if source only contains template definitions. Actual functi
 - Compiler will attempt to deduct missing template arguments.
 
 ###lab04 template.cpp
-- Try Explicit Instantiation
+- Try Implicit Instantiation
 - Try Argument Deduction
 
 ###lab04 quicksort.cpp
