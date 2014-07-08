@@ -4,8 +4,8 @@
 Generic programming is a style of computer programming in which algorithms are written in terms of to-be-specified-later types that are then instantiated when needed for specific types provided as parameters.
 
 ##Why Generic Programming
-###lab04 legacy.cpp
-###lab04 template.cpp
+- lab04 legacy.cpp
+- lab04 template.cpp
 
 ##C++ Templates
 ###Syntax
@@ -15,14 +15,14 @@ template <parameter-list> declaration
 ```
 
 ###parameter-list
- - Non-type template parameter
-    - `[type name [= default]]`
-    - Example
+- Non-type template parameter
+  - `[type name [= default]]`
+  - Example
 
     ```c++
     // non-type
     template<int N>
-    class IntArray
+    struct IntArray
     {
         int a[N];
     };
@@ -32,10 +32,10 @@ template <parameter-list> declaration
     IntArray<20> a2;
     ```
 
- - Type template parameter
-    - `typename|class [name [= default]]`
- - Template template parameter
-    - `template <parameter-list> class [name [= default]]`
+- Type template parameter
+  - `typename|class [name [= default]]`
+- Template template parameter
+  - `template <parameter-list> class [name [= default]]`
 
 ##Function Templates
 ###Function Template Instantiation
@@ -91,14 +91,26 @@ http://en.cppreference.com/w/cpp/container
 
 ###Iterators
 http://en.cppreference.com/w/cpp/iterator
- - InputIterator
- - OutputIterator
- - ForwardIterator
- - BidirectionalIterator
- - RandomAccessIterator
+- InputIterator
+- OutputIterator
+- ForwardIterator
+- BidirectionalIterator
+- RandomAccessIterator
+
+###Utilities
+http://en.cppreference.com/w/cpp/utility
+- bitset
+- pair
+- tuple
+- swap
+- std::rel_ops::operator!=,>,<=,>=
 
 ###Algorithms
 http://en.cppreference.com/w/cpp/algorithm
- - <algorithm>
- - <numeric>
- - <cstdlib>
+- `<algorithm>`
+- `<numeric>`
+- `<cstdlib>`
+
+###Another look at iostream and string
+http://en.cppreference.com/w/cpp/io
+http://en.cppreference.com/w/cpp/string
