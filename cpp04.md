@@ -114,3 +114,6 @@ http://en.cppreference.com/w/cpp/algorithm
 ###Another look at iostream and string
 - http://en.cppreference.com/w/cpp/io
 - http://en.cppreference.com/w/cpp/string
+
+##Effective STL
+50 Specific Ways to Improve Your Use of the Standard Template Library
