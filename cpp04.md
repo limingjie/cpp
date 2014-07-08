@@ -54,5 +54,12 @@ template <parameter-list> declaration
 
 ##Class Templates
 
-##STL
+##C++ Generic Programming
+###Containers
 http://en.cppreference.com/w/cpp/container
+
+###Iterators
+http://en.cppreference.com/w/cpp/iterator
+
+###Algorithms
+http://en.cppreference.com/w/cpp/algorithm
