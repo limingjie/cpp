@@ -98,6 +98,7 @@ stack_push(&s1, 3);
         this.y += y;
     }
     ```
+
 - Default Member Functions
   - Default Constructor `point()`
   - Destructor `~point()`
@@ -105,3 +106,8 @@ stack_push(&s1, 3);
   - Copy-assignment Operator `point& operator=(point const&)`
   - Move Constructor (C++11)
   - Move-assignment Operator (C++11)
+
+###new & delete operators
+- new - allocate memory and call constructor
+- delete - call destructor and return memory
+- new[] & delete[]
