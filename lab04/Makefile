@@ -10,7 +10,7 @@ CXX       = g++
 CXXFLAGS  = -Wall -O3 -std=c++11
 
 # Executables
-EXES      = quicksort.exe legacy.exe template.exe
+EXES      = legacy.exe template.exe quicksort.exe
 
 # Targets
 all: $(EXES)
