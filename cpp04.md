@@ -65,6 +65,7 @@ No code is generated if source only contains template definitions. Actual functi
 - Try Argument Deduction
 
 ###lab04 quicksort.cpp
+- Pseudo-random number generation
 
 ##Class Templates
 n/a
