@@ -12,6 +12,7 @@ void swapAny(T &a, T &b)
     b = t;
 }
 
+// Explicit instantiation
 template void swapAny<int>(int &a, int &b);
 template void swapAny<string>(string &a, string &b);
 

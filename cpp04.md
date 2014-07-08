@@ -1,7 +1,7 @@
 #Generic Programming
 
 ##Concept
-generic programming is a style of computer programming in which algorithms are written in terms of to-be-specified-later types that are then instantiated when needed for specific types provided as parameters.
+Generic programming is a style of computer programming in which algorithms are written in terms of to-be-specified-later types that are then instantiated when needed for specific types provided as parameters.
 
 ##Why Generic Programming
 ###lab04 legacy.cpp
@@ -39,9 +39,23 @@ template <parameter-list> declaration
 
 ##Function Templates
 ###Function Template Instantiation
-- No code is generated if source only contains template definitions. Actual function is generated only after template instantiated.
+No code is generated if source only contains template definitions. Actual function is generated only after template instantiated.
 - Explicit Instantiation
 - Implicit Instantiation
+
+    ```c++
+    template <typename T>
+    void swapAny(T &a, T &b)
+    {
+        T t = a;
+        a = b;
+        b = t;
+    }
+
+    // Explicit instantiation
+    template void swapAny<int>(int &a, int &b);
+    template void swapAny<string>(string &a, string &b);
+    ```
 
 ###Template Argument Deduction
 - Compiler will attempt to deduct missing template arguments.
@@ -53,13 +67,38 @@ template <parameter-list> declaration
 ###lab04 quicksort.cpp
 
 ##Class Templates
+n/a
 
 ##C++ Generic Programming
 ###Containers
 http://en.cppreference.com/w/cpp/container
+- Sequence containers
+  - array
+  - vector
+  - deque (double ended queue)
+  - forward_list (singly linked list)
+  - list (doubly linked list)
+- Associative containers
+  - set/multiset
+  - map/multimap
+- Unordered associative containers
+  - unordered_set/unordered_multiset
+  - unordered_map/unordered_multimap
+- Container adaptors
+  - stack
+  - queue
+  - priority_queue
 
 ###Iterators
 http://en.cppreference.com/w/cpp/iterator
+ - InputIterator
+ - OutputIterator
+ - ForwardIterator
+ - BidirectionalIterator
+ - RandomAccessIterator
 
 ###Algorithms
 http://en.cppreference.com/w/cpp/algorithm
+ - <algorithm>
+ - <numeric>
+ - <cstdlib>
