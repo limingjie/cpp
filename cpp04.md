@@ -112,5 +112,5 @@ http://en.cppreference.com/w/cpp/algorithm
 - `<cstdlib>`
 
 ###Another look at iostream and string
-http://en.cppreference.com/w/cpp/io
-http://en.cppreference.com/w/cpp/string
+- http://en.cppreference.com/w/cpp/io
+- http://en.cppreference.com/w/cpp/string
