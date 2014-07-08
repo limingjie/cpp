@@ -2,38 +2,42 @@
 
 ##The C Implementation of Stack
 
-    ```c
-    // Declare Data
-    typedef struct
-    {
-        int *data;
-        int size;
-        int top;
-    } stack;
+```c
+// Declare Data
+typedef struct
+{
+    int *data;
+    int size;
+    int top;
+} stack;
 
-    // Declare Functions
-    void stack_init(stack *s, int size);
-    void stack_destory(stack *s);
-    void stack_push(stack *s, int element);
-    int  stack_pop(stack *s);
-    int  stack_is_full(stack *s);
-    int  stack_is_empty(stack *s);
+// Declare Functions
+void stack_init(stack *s, int size);
+void stack_destory(stack *s);
+void stack_push(stack *s, int element);
+int  stack_pop(stack *s);
+int  stack_is_full(stack *s);
+int  stack_is_empty(stack *s);
 
-    // Define 2 stacks
-    stack s0, s1;
+// Define 2 stacks
+stack s0, s1;
 
-    // Use stack functions
-    stack_init(&s0, 10);
-    stack_init(&s1, 20);
-    stack_push(&s0, 1);
-    stack_push(&s0, 2);
-    stack_push(&s0, 3);
-    stack_push(&s1, 1);
-    stack_push(&s1, 2);
-    stack_push(&s1, 3);
-    ```
+// Use stack functions
+stack_init(&s0, 10);
+stack_init(&s1, 20);
+stack_push(&s0, 1);
+stack_push(&s0, 2);
+stack_push(&s0, 3);
+stack_push(&s1, 1);
+stack_push(&s1, 2);
+stack_push(&s1, 3);
+```
 
 ##C++ Class
+###Class and Object
+- Class = Type
+- Object = Variable
+
 ###Syntax
 - Basic Class Declaration with Member Variables
 
