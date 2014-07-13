@@ -2,6 +2,7 @@
 The most important part of this session is to understand the concept of Class and Object.
 
 ##The C Implementation of Stack
+- Separate of data and code
 
 ```c
 // Declare Data
@@ -33,8 +34,6 @@ stack_push(&s1, 1);
 stack_push(&s1, 2);
 stack_push(&s1, 3);
 ```
-
-- Separate of data and code
 
 ##C++ Class
 
@@ -115,13 +114,19 @@ stack_push(&s1, 3);
   - Move-assignment Operator (C++11)
 
 - Operator Overload
+
 http://stackoverflow.com/questions/4421706/operator-overloading
+
   - arithmetic operators: + - * / % and += -= *= /= %= (all binary infix); + - (unary prefix); ++ -- (unary prefix and postfix)
   - bit manipulation: & | ^ << >> and &= |= ^= <<= >>= (all binary infix); ~ (unary prefix)
   - boolean algebra: == != < > <= >= || && (all binary infix); ! (unary prefix)
   - memory management: new new[] delete delete[]
   - implicit conversion operators
   - miscellany: = [] -> , (all binary infix); * & (all unary prefix) () (function call, n-ary infix)
+
+- Sample
+
+https://github.com/limingjie/TinyWebCrawler
 
 ###new & delete operators
 - new - allocate memory and call constructor
