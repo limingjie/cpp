@@ -147,8 +147,7 @@ class B : public A
 - Subclass & Superclass (Parent/Child, Base/Derived)
 - Multi-inheritance
 - Virtual Inheritance
-
-http://en.wikipedia.org/wiki/Virtual_inheritance
+ - http://en.wikipedia.org/wiki/Virtual_inheritance
 
 ###Object-oriented Programming Features
 - Encapsulation enforces modularity
