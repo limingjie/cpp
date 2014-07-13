@@ -114,9 +114,7 @@ stack_push(&s1, 3);
   - Move-assignment Operator (C++11)
 
 - Operator Overload
-
-http://stackoverflow.com/questions/4421706/operator-overloading
-
+  - http://stackoverflow.com/questions/4421706/operator-overloading
   - arithmetic operators: + - * / % and += -= *= /= %= (all binary infix); + - (unary prefix); ++ -- (unary prefix and postfix)
   - bit manipulation: & | ^ << >> and &= |= ^= <<= >>= (all binary infix); ~ (unary prefix)
   - boolean algebra: == != < > <= >= || && (all binary infix); ! (unary prefix)
@@ -125,8 +123,7 @@ http://stackoverflow.com/questions/4421706/operator-overloading
   - miscellany: = [] -> , (all binary infix); * & (all unary prefix) () (function call, n-ary infix)
 
 - Sample
-
-https://github.com/limingjie/TinyWebCrawler
+  - https://github.com/limingjie/TinyWebCrawler
 
 ###new & delete operators
 - new - allocate memory and call constructor
@@ -163,5 +160,4 @@ http://en.wikipedia.org/wiki/Virtual_inheritance
 
 ##Patterns
 - Design Patterns vs AntiPatterns vs Refactoring
-
-http://sourcemaking.com/
+  - http://sourcemaking.com/
