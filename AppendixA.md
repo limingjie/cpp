@@ -1,4 +1,4 @@
-#Guide on using Third-party Libraries
+#Guide on Using Third-party Libraries
 
 ##Third-party Libraries
 ###What is Third-party Libraries
@@ -33,7 +33,7 @@ Reusable software component developed to be either freely distributed or sold by
 - make
 - make install
 
-###libcurl (http://curl.haxx.se/)
+###Lab: libcurl (http://curl.haxx.se/)
 - Study
   - Functionality (http://en.wikipedia.org/wiki/CURL)
   - License (http://curl.haxx.se/docs/copyright.html)
@@ -72,9 +72,9 @@ Reusable software component developed to be either freely distributed or sold by
   - Use the `-L` linker option to specify path to third-party libs
   - Use the `-l` linker option to specify any third-party libs to link
 
-###TinyWebCrawler
-- $ git clone https://github.com/limingjie/TinyWebCrawler.git
-- $ curl-config
+###Lab: TinyWebCrawler
+- `$ git clone https://github.com/limingjie/TinyWebCrawler.git`
+- `$ curl-config`
 
     ```
     Usage: curl-config [OPTION]
@@ -97,4 +97,4 @@ Reusable software component developed to be either freely distributed or sold by
       --vernum    output the version information as a number (hexadecimal)
     ```
 
-- $ make
+- `$ make`
