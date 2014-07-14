@@ -41,7 +41,7 @@ Reusable software component developed to be either freely distributed or sold by
   - Actively Development (http://curl.haxx.se/changes.html)
   - Cross-platform
   - Both dynamically and statically link
-  - No dependencies on other Third-party Libraries
+  - HTTP - No dependencies on other Third-party Libraries
   - Small footprint
   - Good performance
 - Compile & Install
@@ -51,8 +51,50 @@ Reusable software component developed to be either freely distributed or sold by
   - Install - make install
 
     ```
+    # Rename mingw sed.exe as it does not support autoconf well.
+    $ mv /mingw/bin/sed.exe /mingw/bin/sed.mingw.exe
+    # Check autoconf options
     $ ./configure --help
+    # Run autoconf
     $ ./configure --disable-debug --enable-optimize --enable-static --disable-shared
+    # Compile
     $ make
+    # Install
     $ make install
     ```
+
+###Using Third-party Libraries
+- Study Third-party Libraries from its docs and demos
+- Include library head files in source code
+- Compile with Third-party Libraries
+  - Use the `-I` compiler option to specify path to third-party Libraries
+- Link with Third-party Libraries
+  - Use the `-L` linker option to specify path to third-party libs
+  - Use the `-l` linker option to specify any third-party libs to link
+
+###TinyWebCrawler
+- $ git clone https://github.com/limingjie/TinyWebCrawler.git
+- $ curl-config
+
+    ```
+    Usage: curl-config [OPTION]
+
+    Available values for OPTION include:
+
+      --built-shared says 'yes' if libcurl was built shared
+      --ca        ca bundle install path
+      --cc        compiler
+      --cflags    pre-processor and compiler flags
+      --checkfor [version] check for (lib)curl of the specified version
+      --configure the arguments given to configure when building curl
+      --features  newline separated list of enabled features
+      --help      display this help and exit
+      --libs      library linking information
+      --prefix    curl install prefix
+      --protocols newline separated list of enabled protocols
+      --static-libs static libcurl library linking information
+      --version   output version information
+      --vernum    output the version information as a number (hexadecimal)
+    ```
+
+- $ make
