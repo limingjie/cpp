@@ -91,14 +91,14 @@ stack_push(&s1, 3);
 
     point::point(int x, int y)
     {
-        this.x = x;
-        this.y = y;
+        this->x = x;
+        this->y = y;
     }
 
     void point::move(int x, int y)
     {
-        this.x += x;
-        this.y += y;
+        this->x += x;
+        this->y += y;
     }
     ```
 
