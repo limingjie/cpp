@@ -45,6 +45,13 @@ Special characters to extend or match filenames
   - [^c<sub>1</sub>c<sub>2</sub>...]
   - [c<sub>1</sub>-c<sub>2</sub>]
 
+##Login Unix/Linux System
+- Remote Connection
+  - `$ ssh IP_ADDRESS/HOSTNAME`
+  - putty
+- Change password
+  - `$ passwd`
+
 ##File System
 ###File System Hierarchy
 The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) (FHS) defines the directory structure and directory contents in Unix and Unix-like operating systems, maintained by the Linux Foundation. The current version is 2.3, announced on 29 January 2004.
@@ -86,6 +93,11 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
   - `x` 1 (001)
 
 ###File System Commands
+####Mount Points
+- `$ mount`
+- `$ mount DEVICE PATH`
+- `/etc/fstab`
+
 ####Files and Directories
 - `$ pwd` present working directory
 - `$ ls PATH` list
@@ -158,6 +170,8 @@ perl
 $ sort < list.txt
 
 $ cat list.txt | sort
+
+$ cat list.txt | tee -a list.bak.txt
 ```
 
 ##Searching and Matching
@@ -178,7 +192,10 @@ $ cat list.txt | sort
  | `( )`         | Matches a subexpression that can be recalled later.                                            |
  | `\n`          | Matches what the nth marked subexpression matched.                                             |
 
-###Searching File Content
+- Examples
+  - [Wikipedia: Regular Expression](http://en.wikipedia.org/wiki/Regular_expression)
+
+###Searching File Contents
 - `$ grep -e '^-' cpp01.md`
 - `$ sed -n -e '/^-/p' cpp01.md`
 
@@ -188,4 +205,48 @@ $ cat list.txt | sort
 - `$ ls -la | grep PATTERN`
 - `$ ls *.md | grep cpp | sed 's/\(.*\)/cp \1 \1.bak/g' | bash`
 
-##
+##Processes
+- `$ top`
+- `$ htop`
+- `$ ps` list processes
+  - `$ ps -ef`
+  - `$ ps -ef | grep -i sshd`
+- `$ kill` kill processes
+  - `$ kill PID`
+  - `$ kill -9 PID`
+
+##Jobs
+- `$ sleep 10000 &` run command in background
+- `$ jobs` list running jobs
+- `$ fg %jobnumber` restart a job by job number
+- `[Ctrl+c]` terminate running command
+- `$ sleep 10000`
+- `[Ctrl+z]` suspend current job
+- `$ bg` put suspended job in background
+- `$ kill %job number` kill process by job number
+
+##Superuser (root)
+###su
+- `$ su` switch to root
+- `$ su - USERNAME` switch to any users
+- `$ who`
+- `$ whoami`
+
+###sudo
+- `$ visudo` check sudo permission
+- `$ sudo command` run command with superuser access
+
+##Other Useful Commands
+- []`$ uname`
+- []`$ uptime`
+- []`$ last`
+- []`$ ifconfig`
+- []`$ id`
+- []`$ history`
+- []`$ time`
+- []`$ date`
+- []`$ diff`
+- []`$ awk`
+- []`$ iconv`
+- []`$ set`
+- []`$ echo`
