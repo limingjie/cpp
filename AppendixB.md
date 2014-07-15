@@ -237,16 +237,16 @@ $ cat list.txt | tee -a list.bak.txt
 - `$ sudo command` run command with superuser access
 
 ##Other Useful Commands
-- []`$ uname`
-- []`$ uptime`
-- []`$ last`
-- []`$ ifconfig`
-- []`$ id`
-- []`$ history`
-- []`$ time`
-- []`$ date`
-- []`$ diff`
-- []`$ awk`
-- []`$ iconv`
-- []`$ set`
-- []`$ echo`
+- [ ] `$ uname`
+- [ ] `$ uptime`
+- [ ] `$ last`
+- [ ] `$ ifconfig`
+- [ ] `$ id`
+- [ ] `$ history`
+- [ ] `$ time`
+- [ ] `$ date`
+- [ ] `$ diff`
+- [ ] `$ awk`
+- [ ] `$ iconv`
+- [ ] `$ set`
+- [ ] `$ echo`
