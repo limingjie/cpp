@@ -68,7 +68,7 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
 ###File System Permissions
 ####Symbolic notation `-rwxr-xr-x`
 - First character: file type
-  - `\-` Regular file
+  - `-` Regular file
   - `d` Directory
   - `l` Symbolic link
   - `p` Named pipe
