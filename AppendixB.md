@@ -162,6 +162,7 @@ $ cat list.txt | sort
 
 ##Searching and Matching
 ###Regular Expressions
+A regular expression (abbreviated regex or regexp) is a sequence of characters that forms a search pattern
 
  | Metacharacter | Description                                                                                    |
  | :-----------: | :----------                                                                                    |
