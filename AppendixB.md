@@ -49,7 +49,7 @@ Special characters to extend or match filenames
 ###File System Hierarchy
 The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) (FHS) defines the directory structure and directory contents in Unix and Unix-like operating systems, maintained by the Linux Foundation. The current version is 2.3, announced on 29 January 2004.
 
-###Path
+###Paths
 - A full path or absolute path is a path that points to the same location on one file system regardless of the present working directory or combined paths.
 - A relative path is a path relative to the working directory of the user or application, so the full absolute path will not have to be given.
 - Paths
@@ -61,31 +61,32 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
 ###File System Permissions
 ####Symbolic notation `-rwxr-xr-x`
 - First character: file type
-  - \-: Regular file
-  - d: Directory
-  - l: Symbolic link
-  - p: Named pipe
-  - s: Socket
-  - c: Character device file
-  - b: Block device file
-  - D: Door
+  - `\-` Regular file
+  - `d` Directory
+  - `l` Symbolic link
+  - `p` Named pipe
+  - `s` Socket
+  - `c` Character device file
+  - `b` Block device file
+  - `D` Door
 - User class: what the owner can do
 - Group class: what the group members can do
 - Other class: what other users can do
-  - r: readable
-  - w: writable
-  - x: executable
-  - s or t: executable and setuid/setgid/sticky
-  - S or T: setuid/setgid or sticky, but not executable
+  - `r` readable
+  - `w` writable
+  - `x` executable
+  - `s` `t` executable and setuid/setgid/sticky
+  - `S` `T` setuid/setgid or sticky, but not executable
 
 ####Numeric notation `0755`
-- First character: 0
+- First character: `0`
 - Each class
-  - r: 4 (100)
-  - w: 2 (010)
-  - x: 1 (001)
+  - `r` 4 (100)
+  - `w` 2 (010)
+  - `x` 1 (001)
 
 ###File System Commands
+####Files and Directories
 - `$ pwd` present working directory
 - `$ ls PATH` list
   - `-l` long
@@ -107,18 +108,83 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
 - `$ rm FILE` remove
   - `-r` recursive
   - `-f` force
-- `$ chmod Permissions FILE`
+- `$ touch FILE`
+- `$ chmod PERMISSIONS FILE`
   - `-R`
 - `$ chown OWNER:GROUP FILE`
+- `$ file`
+- `$ du`
+- `$ df`
 
+####Displying File Contents
+- `$ cat FILE1 [FILE2 ...]` concatenate
+- `$ less FILE`
+- `$ head FILE`
+  - `-n NUMBER`
+- `$ tail FILE`
+  - `-f`
 
-filesystem
+##Redirection
+###Redirect to file
+Redirect command output to file.
+- `>` Overwrite
+- `>>` Append
 
-attribute
+###Redirect from file
+Redirect file as command input
+- `<`
 
+###Pipe
+- `|`
 
-sed / regex
+###Examples
 
+```
+$ cat > list.txt
+c++
+java
+javascript
+c
+c#
+fortran
+basic
+[Ctrl+D]
 
+$ cat >> list.txt
+python
+perl
+[Ctrl+D]
 
-passwd / adduser
+$ sort < list.txt
+
+$ cat list.txt | sort
+```
+
+##Searching and Matching
+###Regular Expressions
+
+ | Metacharacter | Description                                                                                    |
+ | :-----------: | :----------                                                                                    |
+ | `.`           | Matches any single character                                                                   |
+ | `*`           | Matches the preceding element zero or more times.                                              |
+ | `?`           | Matches the preceding element zero or one time.                                                |
+ | `+`           | Matches the preceding element one or more times.                                               |
+ | `{m,n}`       | Matches the preceding element at least m and not more than n times.                            |
+ | `[ ]`         | Matches a single character that is contained within the brackets                               |
+ | `[^ ]`        | Matches a single character that is not contained within the brackets.                          |
+ | `^`           | Matches the starting position within the string.                                               |
+ | `$`           | Matches the ending position of the string or the position just before a string-ending newline. |
+ | `( )`         | Matches a subexpression that can be recalled later.                                            |
+ | `\n`          | Matches what the nth marked subexpression matched.                                             |
+
+###Searching File Content
+- `$ grep -e '^-' cpp01.md`
+- `$ sed -n -e '/^-/p' cpp01.md`
+
+###Searching File System
+- `$ find . -name "*.md" -print`
+- `$ find . -size +5k -ls`
+- `$ ls -la | grep PATTERN`
+- `$ ls *.md | grep cpp | sed 's/\(.*\)/cp \1 \1.bak/g' | bash`
+
+##
