@@ -226,7 +226,7 @@ $ command > log.txt 2>&1
 - `$ sleep 10000`
 - `[Ctrl+z]` suspend current job
 - `$ bg` put suspended job in background
-- `$ kill %job number` kill process by job number
+- `$ kill %jobnumber` kill process by job number
 - `$ nohup command &` run command in background without hangups.
 
 ##Superuser (root)
@@ -241,16 +241,16 @@ $ command > log.txt 2>&1
 - `$ sudo command` run command with superuser access
 
 ##Other Useful Commands
-- `$ uname`
-- `$ uptime`
-- `$ last`
-- `$ ifconfig`
-- `$ id`
-- `$ history`
-- `$ time`
-- `$ date`
-- `$ diff`
-- `$ awk`
-- `$ iconv`
-- `$ set`
-- `$ echo`
+- `$ uname` print system information
+- `$ uptime` tell how long the system has been running
+- `$ last` show listing of last logged in users
+- `$ ifconfig` configure a network interface
+- `$ id` print real and effective user and group IDs
+- `$ history` GNU History Library
+- `$ time` run programs and summarize system resource usage
+- `$ date` print or set the system date and time
+- `$ diff` compare files line by line
+- `$ awk` pattern scanning and processing language
+- `$ iconv` convert encoding of given files from one encoding to another
+- `$ set` display environment variables
+- `$ echo` display a line of text
