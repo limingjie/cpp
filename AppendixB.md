@@ -96,7 +96,7 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
 ####Mount Points
 - `$ mount`
 - `$ mount DEVICE PATH`
-- `/etc/fstab`
+- `$ cat /etc/fstab`
 
 ####Files and Directories
 - `$ pwd` present working directory
@@ -110,13 +110,13 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
   - `$ cd relative_path`
   - `$ cd`
   - `$ cd /`
-  - $ cd ..`
+  - `$ cd ..`
 - `$ mkdir DIRECTORY` make directory
   - `-p path/to/directory`
 - `$ rmdir DIRECTORY` remove directory
 - `$ cp SOURCE DEST` copy
   - `-R` recursive
-- `$ move FILE1 FILE2` move
+- `$ mv FILE1 FILE2` move
 - `$ rm FILE` remove
   - `-r` recursive
   - `-f` force
@@ -172,6 +172,9 @@ $ sort < list.txt
 $ cat list.txt | sort
 
 $ cat list.txt | tee -a list.bak.txt
+
+# Redirect both output and error to log.txt
+$ command > log.txt 2>&1
 ```
 
 ##Searching and Matching
@@ -223,7 +226,8 @@ $ cat list.txt | tee -a list.bak.txt
 - `$ sleep 10000`
 - `[Ctrl+z]` suspend current job
 - `$ bg` put suspended job in background
-- `$ kill %job number` kill process by job number
+- `$ kill %jobnumber` kill process by job number
+- `$ nohup command &` run command in background without hangups.
 
 ##Superuser (root)
 ###su
@@ -237,16 +241,16 @@ $ cat list.txt | tee -a list.bak.txt
 - `$ sudo command` run command with superuser access
 
 ##Other Useful Commands
-- `$ uname`
-- `$ uptime`
-- `$ last`
-- `$ ifconfig`
-- `$ id`
-- `$ history`
-- `$ time`
-- `$ date`
-- `$ diff`
-- `$ awk`
-- `$ iconv`
-- `$ set`
-- `$ echo`
+- `$ uname` print system information
+- `$ uptime` tell how long the system has been running
+- `$ last` show listing of last logged in users
+- `$ ifconfig` configure a network interface
+- `$ id` print real and effective user and group IDs
+- `$ history` GNU History Library
+- `$ time` run programs and summarize system resource usage
+- `$ date` print or set the system date and time
+- `$ diff` compare files line by line
+- `$ awk` pattern scanning and processing language
+- `$ iconv` convert encoding of given files from one encoding to another
+- `$ set` display environment variables
+- `$ echo` display a line of text
