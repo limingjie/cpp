@@ -81,7 +81,7 @@ The [Filesystem Hierarchy Standard](http://en.wikipedia.org/wiki/Filesystem_Hier
 - Other class: what other users can do
   - `r` readable
   - `w` writable
-  - `x` executable
+  - `x` executable/accessible
   - `s` `t` executable and setuid/setgid/sticky
   - `S` `T` setuid/setgid or sticky, but not executable
 
